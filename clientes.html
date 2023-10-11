@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do Cliente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <div class="container-client">
+            <h1>Dados do Cliente</h1>
+            <div class="data-buttons">
+                <div class="data-container" id="cliente-data">
+                    <table>
+                        <tr>
+                            <td><strong>Nome:</strong></td>
+                            <td><span id="nome"></span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sobrenome:</strong></td>
+                            <td><span id="sobrenome"></span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>CPF:</strong></td>
+                            <td><span id="cpf"></span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data de Nascimento:</strong></td>
+                            <td><span id="dataNascimento"></span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Telefone:</strong></td>
+                            <td><span id="telefone"></span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cidade:</strong></td>
+                            <td><span id="cidade"></span></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="buttons-client">
+                    <div class="center">
+                        <button class="button-client" id="anterior"><i class="fa-solid fa-left-long fa-2xl"></i></button>
+                        <button class="button-client" id="proximo"><i class="fa-solid fa-right-long fa-2xl"></i></button>
+                    </div>
+                        
+                    <button class="button-client" id="cadastrar"><i class="fa-solid fa-plus fa-2xl"></i></button>
+                    <button class="button-client" id="editar"><i class="fa-solid fa-pen-to-square fa-2xl"></i></button>
+                    <button class="button-client" id="excluir"><i class="fa-solid fa-trash fa-2xl"></i></button>
+                    <button class="button-client" id="pesquisar"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></button>
+                    <button class="button-client" id="relatorio"><i class="fa-solid fa-magnifying-glass-chart fa-2xl"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const clienteData = {
+            nome: "João",
+            sobrenome: "Silva",
+            cpf: "123.456.789-00",
+            dataNascimento: "01/01/1990",
+            telefone: "(11) 1234-5678",
+            cidade: "São Paulo"
+        };
+
+        function exibirDadosCliente(data) {
+            document.getElementById("nome").textContent = data.nome;
+            document.getElementById("sobrenome").textContent = data.sobrenome;
+            document.getElementById("cpf").textContent = data.cpf;
+            document.getElementById("dataNascimento").textContent = data.dataNascimento;
+            document.getElementById("telefone").textContent = data.telefone;
+            document.getElementById("cidade").textContent = data.cidade;
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            exibirDadosCliente(clienteData);
+
+            document.getElementById("anterior").addEventListener("click", function() {
+                alert("Cliente Anterior");
+            });
+            document.getElementById("proximo").addEventListener("click", function() {
+                alert("Próximo cliente");
+            });
+
+
+            document.getElementById("cadastrar").addEventListener("click", function() {
+                window.location = "cadastrar-cliente.html"
+            });
+
+            document.getElementById("editar").addEventListener("click", function() {
+                window.location = "alterar-cliente.html"
+            });
+
+            document.getElementById("excluir").addEventListener("click", function() {
+                alert('Excluir cliente');
+            });
+
+            document.getElementById("pesquisar").addEventListener("click", function() {
+                window.location = "localizar-clientes.html"
+            });
+
+            document.getElementById("relatorio").addEventListener("click", function() {
+                window.location = "relatorio.html"
+            });
+        });
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+.container {
+  background-image: url('img/andresa-oculos-pagina-inicial.jpeg');
+  /* Substitua pelo caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-color: #f53466;
+  height: 100%;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.button {
+  margin: 10px;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: small;
+  text-decoration: none;
+}
+
+.button-client {
+  margin: 10px;
+  padding: 10px 5px;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.button-sale {
+  margin: 10px;
+  padding: 10px 5px;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: larger;
+  text-decoration: none;
+  width: 100px;
+}
+
+
+.button-search {
+  padding: 5px 5px;
+  background-color: #ffffff;
+  color: black;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.main {
+  background-color: #f53466;
+  height: 100%;
+  width: 100%;
+}
+
+.login-container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 20%
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  color: #f53466;
+}
+
+.login-form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 30%;
+}
+
+.create-form {
+  margin: 20px;
+  display: block;
+  flex-direction: column;
+  align-items: left;
+  padding-right: 26%;
+}
+
+.create-form input {
+  width: 100%;
+}
+
+.create-form a {
+  display: flex;
+  text-decoration: none;
+  justify-content: right;
+}
+
+.login-form button {
+  background-color: #ffffff00;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block ruby;
+  margin: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.form-group-search {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.form-group-search input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0px 0px 20px;
+  width: 100%;
+}
+
+.form-group button {
+  background-color: #f53466;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container-client {
+  margin: auto;
+  padding: 20px;
+  color: black;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.container-client h1{
+  display: flex;
+  color: white;
+  justify-content: center;
+  font-size: 35px;
+}
+
+.buttons-client {
+  display: grid;
+}
+
+.buttons-sale {
+  display: grid;
+}
+.buttons-color-white{
+  color: #ffffff;
+  font-size: 70px;
+}
+
+.data-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 270px;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 15px;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #ffd699;
+  color: black;
+}
+
+.data-container {
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.data-container-search {
+  text-align: left;
+  padding: 10px;
+  border-radius: 5px;
+  width: 350px;
+}
+
+.data-container-search input{
+  width: 100%;
+}
+
+
+.data-container span {
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.block-ruby {
+  display: block ruby;
+}
+
+.buttons-alterar-cliente {
+  display: block ruby;
+  float: right;
+}
+

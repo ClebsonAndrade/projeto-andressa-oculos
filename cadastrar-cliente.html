@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Cliente</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fontawesome/css/all.min.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="container-client">
+      <h1>Novo Cliente</h1>
+      <form class="create-form">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+          <label for="sobrenome">Sobrenome:</label>
+          <input type="text" id="sobrenome" name="sobrenome" required>
+        </div>
+        <div class="block-ruby">
+          <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+          </div>
+          <div class="form-group">
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="text" id="telefone" name="telefone" required>
+        </div>
+        <div class="form-group">
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required>
+        </div>
+        <div>
+          <a class="buttons-color-white" href="pagina-inicial.html" onclick="alert('Cadastro com sucesso')" type="submit"><i class="fa-solid fa-circle-check" ></i></a>
+        </div>
+        
+        <!-- O button foi tirado, mas está como tag de link para teste-->
+        
+      </form>
+     
+    </div>
+  </div>
+
+
+</body>
+
+</html>
